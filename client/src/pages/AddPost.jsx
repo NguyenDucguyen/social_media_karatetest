@@ -72,7 +72,7 @@ function AddPost() {
 
     return (
         <>
-            <Button onClick={onOpen} colorScheme={'pink'}>Share Post</Button>
+            <Button onClick={onOpen} className='share-post-btn' colorScheme={'pink'}>Share Post</Button>
             <Modal
                 isOpen={isOpen}
                 onClose={onClose}
@@ -95,7 +95,7 @@ function AddPost() {
 
                         <FormControl mt={4}>
                             <FormLabel>Upload Image</FormLabel>
-                            <Button colorScheme={'pink'} as={'label'}>
+                            <Button className='upload-image-btn' colorScheme={'pink'} as={'label'}>
                                 {file ? file.name : " Upload Image"}
                                 <input hidden type={'file'}
                                     accept="image/*" onChange={handleImageChance} placeholder='Last name' />
@@ -105,7 +105,7 @@ function AddPost() {
                     </ModalBody>
 
                     <ModalFooter>
-                        <Button type='submit' colorScheme='pink' onClick={onClose} mr={3}>
+                        <Button className='post-share-btn' type='submit' colorScheme='pink' onClick={onClose} mr={3}>
                             Share
                         </Button>
                         <Button onClick={onClose}>Cancel</Button>

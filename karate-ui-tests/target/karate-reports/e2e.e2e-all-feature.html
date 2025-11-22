@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,12 +49,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-11-20 07:58:28 AM</div>
+    <div>2025-11-22 08:05:58 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1:11]"><span>[1:11]</span> <span>Complete user journey - Login, Post, Follow, Like, Comment</span></a>
           </div>
         </div>
@@ -81,8 +81,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>5989</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>25288</span>
             </div>
           </div>
           <div class="step-row">
@@ -102,10 +102,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, headless: true, timeout: 5000 }</span>
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, headless: false, timeout: 5000 }</span>
       </div>
     </div>
-    <div class="time-cell passed">30</div>
+    <div class="time-cell passed">37</div>
   </div>
 
    
@@ -133,7 +133,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def apiBaseUrl = &#39;http://localhost:8080/api&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">49</div>
+    <div class="time-cell passed">46</div>
   </div>
 
    
@@ -161,7 +161,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def appBaseUrl = &#39;http://localhost:3000&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -196,7 +196,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>karate.log(&#39;USER 1: API REGISTRATION&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">57</div>
+    <div class="time-cell passed">51</div>
   </div>
 
    
@@ -205,7 +205,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.13">07:58:22.870 USER 1: API REGISTRATION 
+  <div class="preformatted" data-parent="0.13">20:05:33.162 USER 1: API REGISTRATION 
 </div>   
 
   
@@ -253,7 +253,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def user1LastName = &#39;User&#39; + java.util.UUID.randomUUID().toString().substring(0, 8)</span>
       </div>
     </div>
-    <div class="time-cell passed">63</div>
+    <div class="time-cell passed">77</div>
   </div>
 
    
@@ -281,7 +281,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def user1Email = &#39;autotest1.&#39; + java.lang.System.currentTimeMillis() + &#39;@example.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -344,7 +344,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url apiBaseUrl + &#39;/auth/register&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -372,7 +372,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>request { name: &#39;#(user1FirstName)&#39;, lastName: &#39;#(user1LastName)&#39;, email: &#39;#(user1Email)&#39;, password: &#39;#(user1Password)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -400,7 +400,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">344</div>
+    <div class="time-cell passed">326</div>
   </div>
 
    
@@ -409,7 +409,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.22">07:58:23.181 request:
+  <div class="preformatted" data-parent="0.22">20:05:33.477 request:
 1 &gt; POST http://localhost:8080/api/auth/register
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 116
@@ -417,9 +417,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;AutoTest&quot;,&quot;lastName&quot;:&quot;User6dbeb10b&quot;,&quot;email&quot;:&quot;autotest1.1763600302941@example.com&quot;,&quot;password&quot;:&quot;Test@123456&quot;}
+{&quot;name&quot;:&quot;AutoTest&quot;,&quot;lastName&quot;:&quot;Userd76b8aab&quot;,&quot;email&quot;:&quot;autotest1.1763816733243@example.com&quot;,&quot;password&quot;:&quot;Test@123456&quot;}
 
-07:58:23.289 response time in milliseconds: 105
+20:05:33.584 response time in milliseconds: 104
 1 &lt; 200
 1 &lt; Vary: Origin
 1 &lt; Vary: Access-Control-Request-Method
@@ -432,10 +432,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: text/plain;charset=UTF-8
 1 &lt; Content-Length: 301
-1 &lt; Date: Thu, 20 Nov 2025 00:58:23 GMT
+1 &lt; Date: Sat, 22 Nov 2025 13:05:33 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSIsImV4cCI6MTc2MzYzNjMwMywidXNlciI6eyJpZCI6MTMsImZ1bGxOYW1lIjoiQXV0b1Rlc3QgVXNlcjZkYmViMTBiIiwiZW1haWwiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSJ9LCJpYXQiOjE3NjM2MDAzMDN9.xTzmnUxns35RAv4Jg5XJwJBjoFG2tCJipAlPlnMbODc
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzgxNjczMzI0M0BleGFtcGxlLmNvbSIsImV4cCI6MTc2Mzg1MjczMywidXNlciI6eyJpZCI6NTAsImZ1bGxOYW1lIjoiQXV0b1Rlc3QgVXNlcmQ3NmI4YWFiIiwiZW1haWwiOiJhdXRvdGVzdDEuMTc2MzgxNjczMzI0M0BleGFtcGxlLmNvbSJ9LCJpYXQiOjE3NjM4MTY3MzN9.HesIOFmLiYBqJXeVm6Xd5J4VerFhFmyot49M9Dn13eI
 
 </div>   
 
@@ -484,7 +484,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSI
         <span>*</span>&nbsp;<span>def user1Token = response</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -521,7 +521,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSI
 
   
 
-  <div class="preformatted" data-parent="0.25">07:58:23.302 User 1 API Registration response token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSIsImV4cCI6MTc2MzYzNjMwMywidXNlciI6eyJpZCI6MTMsImZ1bGxOYW1lIjoiQXV0b1Rlc3QgVXNlcjZkYmViMTBiIiwiZW1haWwiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSJ9LCJpYXQiOjE3NjM2MDAzMDN9.xTzmnUxns35RAv4Jg5XJwJBjoFG2tCJipAlPlnMbODc 
+  <div class="preformatted" data-parent="0.25">20:05:33.593 User 1 API Registration response token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzgxNjczMzI0M0BleGFtcGxlLmNvbSIsImV4cCI6MTc2Mzg1MjczMywidXNlciI6eyJpZCI6NTAsImZ1bGxOYW1lIjoiQXV0b1Rlc3QgVXNlcmQ3NmI4YWFiIiwiZW1haWwiOiJhdXRvdGVzdDEuMTc2MzgxNjczMzI0M0BleGFtcGxlLmNvbSJ9LCJpYXQiOjE3NjM4MTY3MzN9.HesIOFmLiYBqJXeVm6Xd5J4VerFhFmyot49M9Dn13eI 
 </div>   
 
   
@@ -541,7 +541,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSI
         <span>*</span>&nbsp;<span>def user1 = { firstName: user1FirstName, lastName: user1LastName, email: user1Email, password: user1Password, token: user1Token }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -576,7 +576,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSI
         <span>Given</span>&nbsp;<span>driver appBaseUrl + &#39;/login&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1645</div>
+    <div class="time-cell passed">1632</div>
   </div>
 
    
@@ -604,7 +604,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSI
         <span>Then</span>&nbsp;<span>waitFor(&quot;input[name=&#39;email&#39;]&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">64</div>
+    <div class="time-cell passed">66</div>
   </div>
 
    
@@ -632,7 +632,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSI
         <span>When</span>&nbsp;<span>input(&quot;input[name=&#39;email&#39;]&quot;, user1Email)</span>
       </div>
     </div>
-    <div class="time-cell passed">520</div>
+    <div class="time-cell passed">503</div>
   </div>
 
    
@@ -660,7 +660,7 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSI
         <span>And</span>&nbsp;<span>input(&quot;input[name=&#39;password&#39;]&quot;, user1Password)</span>
       </div>
     </div>
-    <div class="time-cell passed">171</div>
+    <div class="time-cell passed">161</div>
   </div>
 
    
@@ -682,13 +682,13 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSI
 
   <div class="step-row">
     <div class="step-container" id="0.33">
-      <div class="step-ref failed">33</div>
+      <div class="step-ref passed">33</div>
       
-      <div class="step-cell failed">
-        <span>When</span>&nbsp;<span>click(&quot;{a}Login&quot;)</span>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>waitFor(&quot;{button}Submit&quot;).click()</span>
       </div>
     </div>
-    <div class="time-cell failed">3023</div>
+    <div class="time-cell passed">22</div>
   </div>
 
    
@@ -697,20 +697,35 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRvdGVzdDEuMTc2MzYwMDMwMjk0MUBleGFtcGxlLmNvbSI
 
   
 
-  <div class="preformatted" data-parent="0.33">07:58:28.728 classpath:e2e/e2e-all-feature.feature:33
-When click(&quot;{a}Login&quot;)
-js failed:
-&gt;&gt;&gt;&gt;
-01: click(&quot;{a}Login&quot;)
-&lt;&lt;&lt;&lt;
-org.graalvm.polyglot.PolyglotException: js eval failed twice:document.evaluate(&quot;//a[normalize-space(text())=&#39;Login&#39;]&quot;, document, null, 9, null).singleNodeValue.click(), error: [type: MAP, value: {type=object, subtype=error, className=TypeError, description=TypeError: Cannot read properties of null (reading &#39;click&#39;)
-    at &lt;anonymous&gt;:1:99, objectId=-5552300838413945126.1.3}]
-- com.intuit.karate.driver.DevToolsDriver.evalInternal(DevToolsDriver.java:358)
-- com.intuit.karate.driver.DevToolsDriver.eval(DevToolsDriver.java:322)
-- com.intuit.karate.driver.DevToolsDriver.click(DevToolsDriver.java:560)
-- &lt;js&gt;.:anonymous(Unnamed:1)
+     
 
-classpath:e2e/e2e-all-feature.feature:33
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>waitForUrl(&#39;/home&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3016</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">20:05:35.992 waitForUrl - retry #1
 </div>   
 
   
@@ -723,42 +738,14 @@ classpath:e2e/e2e-all-feature.feature:33
   
 
   <div class="step-row">
-    <div class="step-container" id="0.34">
-      <div class="step-ref skipped">34</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitForUrl(&#39;/home&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  <div class="embed" data-parent="0.34"><img src="e2e.e2e-all-feature_1_1763600308766.png"/></div>
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.35">
-      <div class="step-ref skipped">35</div>
+      <div class="step-ref passed">35</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>karate.log(&#39;User 1 logged in successfully&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -767,7 +754,8 @@ classpath:e2e/e2e-all-feature.feature:33
 
   
 
-     
+  <div class="preformatted" data-parent="0.35">20:05:39.002 User 1 logged in successfully 
+</div>   
 
   
 
@@ -787,13 +775,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.38">
-      <div class="step-ref skipped">38</div>
+      <div class="step-ref passed">38</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>driver appBaseUrl + &#39;/home&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">400</div>
   </div>
 
    
@@ -815,13 +803,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.39">
-      <div class="step-ref skipped">39</div>
+      <div class="step-ref passed">39</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>delay(2000)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2009</div>
   </div>
 
    
@@ -843,13 +831,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.40">
-      <div class="step-ref skipped">40</div>
+      <div class="step-ref passed">40</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>waitFor(&quot;body&quot;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -871,13 +859,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.41">
-      <div class="step-ref skipped">41</div>
+      <div class="step-ref passed">41</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>karate.log(&#39;User 1 navigated to home&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -886,7 +874,8 @@ classpath:e2e/e2e-all-feature.feature:33
 
   
 
-     
+  <div class="preformatted" data-parent="0.41">20:05:41.410 User 1 navigated to home 
+</div>   
 
   
 
@@ -906,13 +895,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.44">
-      <div class="step-ref skipped">44</div>
+      <div class="step-ref passed">44</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>delay(1000)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1014</div>
   </div>
 
    
@@ -934,13 +923,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.45">
-      <div class="step-ref skipped">45</div>
+      <div class="step-ref passed">45</div>
       
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitFor(&quot;{button}Share&quot;).click()</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>waitFor(&quot;{button}Share Post&quot;).click()</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">24</div>
   </div>
 
    
@@ -962,13 +951,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.46">
-      <div class="step-ref skipped">46</div>
+      <div class="step-ref passed">46</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>waitFor(&quot;//textarea[@name=&#39;description&#39;]&quot;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -990,13 +979,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.47">
-      <div class="step-ref skipped">47</div>
+      <div class="step-ref passed">47</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def postText = &#39;This is my first automated test post! #automation #testing &#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1018,13 +1007,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.48">
-      <div class="step-ref skipped">48</div>
+      <div class="step-ref passed">48</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>input(&quot;//textarea[@name=&#39;description&#39;]&quot;, postText)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">889</div>
   </div>
 
    
@@ -1046,13 +1035,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.49">
-      <div class="step-ref skipped">49</div>
+      <div class="step-ref passed">49</div>
       
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>click(&quot;{button}Share&quot;)</span>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>waitFor(&quot;{button}Share&quot;).click()</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -1074,13 +1063,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.50">
-      <div class="step-ref skipped">50</div>
+      <div class="step-ref passed">50</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>delay(2000)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2014</div>
   </div>
 
    
@@ -1102,13 +1091,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.51">
-      <div class="step-ref skipped">51</div>
+      <div class="step-ref passed">51</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>karate.log(&#39;User 1 created text post:&#39;, postText)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1117,7 +1106,8 @@ classpath:e2e/e2e-all-feature.feature:33
 
   
 
-     
+  <div class="preformatted" data-parent="0.51">20:05:45.370 User 1 created text post: This is my first automated test post! #automation #testing  
+</div>   
 
   
 
@@ -1137,13 +1127,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.54">
-      <div class="step-ref skipped">54</div>
+      <div class="step-ref passed">54</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def imagePostText = &#39;Check out this beautiful automation test image! &#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1165,13 +1155,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.55">
-      <div class="step-ref skipped">55</div>
+      <div class="step-ref passed">55</div>
       
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitFor(&quot;{button}Share&quot;).click()</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>waitFor(&quot;{button}Share Post&quot;).click()</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -1193,13 +1183,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.56">
-      <div class="step-ref skipped">56</div>
+      <div class="step-ref passed">56</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>waitFor(&quot;//textarea[@name=&#39;description&#39;]&quot;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -1221,13 +1211,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.57">
-      <div class="step-ref skipped">57</div>
+      <div class="step-ref passed">57</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>input(&quot;//textarea[@name=&#39;description&#39;]&quot;, imagePostText)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">581</div>
   </div>
 
    
@@ -1249,13 +1239,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.58">
-      <div class="step-ref skipped">58</div>
+      <div class="step-ref passed">58</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def imgPath = karate.properties[&#39;user.dir&#39;] + &#39;/src/test/resources/test-image.png&#39;</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def imgPath = &#39;./src/test/resources/test-image.jpg&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1277,13 +1267,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.59">
-      <div class="step-ref skipped">59</div>
+      <div class="step-ref passed">59</div>
       
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>input(&quot;input[type=&#39;file&#39;]&quot;, imgPath)</span>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>driver.inputFile(&quot;input[type=&#39;file&#39;]&quot;, imgPath)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -1305,13 +1295,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.60">
-      <div class="step-ref skipped">60</div>
+      <div class="step-ref passed">60</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>retry(5, 2000).waitUntil(&quot;document.querySelector(&#39;img[src*=\&quot;blob\&quot;]&#39;) !== null&quot;)</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>delay(2000)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2007</div>
   </div>
 
    
@@ -1333,13 +1323,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.61">
-      <div class="step-ref skipped">61</div>
+      <div class="step-ref passed">61</div>
       
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>click(&quot;{button}Share&quot;)</span>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>waitFor(&quot;.post-share-btn&quot;).click()</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -1361,13 +1351,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.62">
-      <div class="step-ref skipped">62</div>
+      <div class="step-ref passed">62</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>delay(2000)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2009</div>
   </div>
 
    
@@ -1389,13 +1379,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.63">
-      <div class="step-ref skipped">63</div>
+      <div class="step-ref passed">63</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>karate.log(&#39;User 1 created image post:&#39;, imagePostText)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1404,7 +1394,8 @@ classpath:e2e/e2e-all-feature.feature:33
 
   
 
-     
+  <div class="preformatted" data-parent="0.63">20:05:50.010 User 1 created image post: Check out this beautiful automation test image!  
+</div>   
 
   
 
@@ -1417,20 +1408,20 @@ classpath:e2e/e2e-all-feature.feature:33
     <div class="step-container">
       <div class="step-ref passed"></div>
       
-      <div class="step-cell comment"># Step 6: Logout User 1</div>
+      <div class="step-cell comment"># Step 7: Like a post (first post on profile)</div>
     </div>
     <div class="time-cell comment"></div>            
   </div>
 
   <div class="step-row">
     <div class="step-container" id="0.66">
-      <div class="step-ref skipped">66</div>
+      <div class="step-ref passed">66</div>
       
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitFor(&quot;//button[contains(., &#39;Logout&#39;)] | //a[contains(., &#39;Logout&#39;)]&quot;)</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>waitFor(&quot;.like-btn&quot;).click()</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -1452,13 +1443,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.67">
-      <div class="step-ref skipped">67</div>
+      <div class="step-ref passed">67</div>
       
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>click(&quot;//button[contains(., &#39;Logout&#39;)] | //a[contains(., &#39;Logout&#39;)]&quot;)</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>delay(1000)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1002</div>
   </div>
 
    
@@ -1480,13 +1471,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.68">
-      <div class="step-ref skipped">68</div>
+      <div class="step-ref passed">68</div>
       
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>delay(2000)</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.log(&#39;User 1 liked the first post&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1495,63 +1486,8 @@ classpath:e2e/e2e-all-feature.feature:33
 
   
 
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.69">
-      <div class="step-ref skipped">69</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>waitFor(&quot;input[name=&#39;email&#39;]&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.70">
-      <div class="step-ref skipped">70</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;User 1 logged out successfully&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
+  <div class="preformatted" data-parent="0.68">20:05:51.018 User 1 liked the first post 
+</div>   
 
   
 
@@ -1564,20 +1500,76 @@ classpath:e2e/e2e-all-feature.feature:33
     <div class="step-container">
       <div class="step-ref passed"></div>
       
-      <div class="step-cell comment"># PART 2: USER 2 - REGISTER AND INTERACT</div>
+      <div class="step-cell comment"># Step 8: Unlike the post</div>
     </div>
     <div class="time-cell comment"></div>            
   </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>waitFor(&quot;.like-btn&quot;).click()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>delay(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1005</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
 
   <div class="step-row">
     <div class="step-container" id="0.73">
-      <div class="step-ref skipped">73</div>
+      <div class="step-ref passed">73</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def user2FirstName = &#39;InteractiveTest&#39;</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.log(&#39;User 1 unliked the post&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1586,91 +1578,8 @@ classpath:e2e/e2e-all-feature.feature:33
 
   
 
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.74">
-      <div class="step-ref skipped">74</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def user2LastName = &#39;User&#39; + java.util.UUID.randomUUID().toString().substring(0, 8)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.75">
-      <div class="step-ref skipped">75</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def user2Email = &#39;autotest2.&#39; + java.lang.System.currentTimeMillis() + &#39;@example.com&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.76">
-      <div class="step-ref skipped">76</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def user2Password = &#39;Test@654321&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
+  <div class="preformatted" data-parent="0.73">20:05:52.029 User 1 unliked the post 
+</div>   
 
   
 
@@ -1683,20 +1592,105 @@ classpath:e2e/e2e-all-feature.feature:33
     <div class="step-container">
       <div class="step-ref passed"></div>
       
-      <div class="step-cell comment"># Register User 2 via API</div>
+      <div class="step-cell comment"># Step 9: Add a comment</div>
     </div>
     <div class="time-cell comment"></div>            
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.79">
-      <div class="step-ref skipped">79</div>
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>url apiBaseUrl + &#39;/auth/register&#39;</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>waitFor(&quot;.comment-btn&quot;).click()</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>delay(1500)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1512</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.log(&#39;User 1 opened comment section&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.78">20:05:53.559 User 1 opened comment section 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def commentText = &#39;Great post! This is an automated test comment #awesome&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1718,13 +1712,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.80">
-      <div class="step-ref skipped">80</div>
+      <div class="step-ref passed">80</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>request { name: &#39;#(user2FirstName)&#39;, lastName: &#39;#(user2LastName)&#39;, email: &#39;#(user2Email)&#39;, password: &#39;#(user2Password)&#39; }</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>waitFor(&quot;input[name=&#39;description&#39;]&quot;).input(commentText)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">583</div>
   </div>
 
    
@@ -1746,13 +1740,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.81">
-      <div class="step-ref skipped">81</div>
+      <div class="step-ref passed">81</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>method post</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>delay(500)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">515</div>
   </div>
 
    
@@ -1774,13 +1768,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.82">
-      <div class="step-ref skipped">82</div>
+      <div class="step-ref passed">82</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>status 200</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.log(&#39;User 1 typed comment:&#39;, commentText)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1789,63 +1783,8 @@ classpath:e2e/e2e-all-feature.feature:33
 
   
 
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.83">
-      <div class="step-ref skipped">83</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def user2Token = response</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.84">
-      <div class="step-ref skipped">84</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;User 2 API Registration response token:&#39;, user2Token)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
+  <div class="preformatted" data-parent="0.82">20:05:54.660 User 1 typed comment: Great post! This is an automated test comment #awesome 
+</div>   
 
   
 
@@ -1858,20 +1797,105 @@ classpath:e2e/e2e-all-feature.feature:33
     <div class="step-container">
       <div class="step-ref passed"></div>
       
-      <div class="step-cell comment"># Store User 2 info</div>
+      <div class="step-cell comment"># Step 10: Share/Submit the comment</div>
     </div>
     <div class="time-cell comment"></div>            
   </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>waitFor(&quot;.comment-share-btn&quot;).click()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>delay(1500)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1506</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
 
   <div class="step-row">
     <div class="step-container" id="0.87">
-      <div class="step-ref skipped">87</div>
+      <div class="step-ref passed">87</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def user2 = { firstName: user2FirstName, lastName: user2LastName, email: user2Email, password: user2Password, token: user2Token }</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.log(&#39;User 1 shared the comment&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.87">20:05:56.176 User 1 shared the comment 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>waitFor(&quot;[aria-label=&#39;Close&#39;]&quot;).click()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -1893,48 +1917,20 @@ classpath:e2e/e2e-all-feature.feature:33
     <div class="step-container">
       <div class="step-ref passed"></div>
       
-      <div class="step-cell comment"># Step 8: Login User 2</div>
+      <div class="step-cell comment"># Step 11: Logout User 1</div>
     </div>
     <div class="time-cell comment"></div>            
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.90">
-      <div class="step-ref skipped">90</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>driver appBaseUrl + &#39;/login&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.91">
-      <div class="step-ref skipped">91</div>
+      <div class="step-ref passed">91</div>
       
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitFor(&quot;input[name=&#39;email&#39;]&quot;)</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>driver appBaseUrl + &#39;/home&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">77</div>
   </div>
 
    
@@ -1956,13 +1952,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.92">
-      <div class="step-ref skipped">92</div>
+      <div class="step-ref passed">92</div>
       
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>input(&quot;input[name=&#39;email&#39;]&quot;, user2Email)</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>retry(5, 2000).waitFor(&quot;//button[contains(text(), &#39;Log out&#39;)]&quot;).click()</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">58</div>
   </div>
 
    
@@ -1984,13 +1980,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.93">
-      <div class="step-ref skipped">93</div>
+      <div class="step-ref passed">93</div>
       
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>input(&quot;input[name=&#39;password&#39;]&quot;, user2Password)</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>delay(2000)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2001</div>
   </div>
 
    
@@ -2012,13 +2008,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.94">
-      <div class="step-ref skipped">94</div>
+      <div class="step-ref passed">94</div>
       
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>click(&quot;{a}Login&quot;)</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>waitFor(&quot;input[name=&#39;email&#39;]&quot;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -2040,13 +2036,13 @@ classpath:e2e/e2e-all-feature.feature:33
 
   <div class="step-row">
     <div class="step-container" id="0.95">
-      <div class="step-ref skipped">95</div>
+      <div class="step-ref passed">95</div>
       
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitForUrl(&#39;/home&#39;)</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.log(&#39;User 1 logged out successfully&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2055,835 +2051,8 @@ classpath:e2e/e2e-all-feature.feature:33
 
   
 
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.96">
-      <div class="step-ref skipped">96</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;User 2 logged in successfully&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Step 9: Navigate to home feed</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.99">
-      <div class="step-ref skipped">99</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>driver appBaseUrl + &#39;/home&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.100">
-      <div class="step-ref skipped">100</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>delay(2000)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.101">
-      <div class="step-ref skipped">101</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>waitFor(&quot;body&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.102">
-      <div class="step-ref skipped">102</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;User 2 navigated to home feed - should see User 1 posts from database&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Step 10: Follow User 1</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Try to find and click follow button - this may depend on your app structure</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.106">
-      <div class="step-ref skipped">106</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>try { click(&quot;//button[contains(., &#39;Follow&#39;)] | //button[contains(text(), &#39;Follow&#39;)]&quot;) } catch(e) { karate.log(&#39;Follow button not found in current view&#39;) }</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.107">
-      <div class="step-ref skipped">107</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>delay(1000)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.108">
-      <div class="step-ref skipped">108</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;User 2 attempted to follow User 1&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Step 11: Like the first post</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.111">
-      <div class="step-ref skipped">111</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitFor(&quot;//button[contains(., &#39;Like&#39;)]&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.112">
-      <div class="step-ref skipped">112</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def likeBtn = &quot;(//button[contains(., &#39;Like&#39;)])[1]&quot;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.113">
-      <div class="step-ref skipped">113</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>click(likeBtn)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.114">
-      <div class="step-ref skipped">114</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>delay(1000)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.115">
-      <div class="step-ref skipped">115</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;User 2 liked first post&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Step 12: Add comment to first post</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.118">
-      <div class="step-ref skipped">118</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;===== USER 2: COMMENT ON FIRST POST =====&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.119">
-      <div class="step-ref skipped">119</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitFor(&quot;//button[contains(., &#39;Comment&#39;)]&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.120">
-      <div class="step-ref skipped">120</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def commentBtn = &quot;(//button[contains(., &#39;Comment&#39;)])[1]&quot;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.121">
-      <div class="step-ref skipped">121</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>click(commentBtn)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.122">
-      <div class="step-ref skipped">122</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitFor(&quot;//input[@placeholder=&#39;Share a Comment&#39;] | //textarea[contains(@placeholder, &#39;Comment&#39;)]&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.123">
-      <div class="step-ref skipped">123</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>def commentText = &#39;Great post! Love the automation testing approach! #impressed&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.124">
-      <div class="step-ref skipped">124</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>input(&quot;//input[@placeholder=&#39;Share a Comment&#39;] | //textarea[contains(@placeholder, &#39;Comment&#39;)]&quot;, commentText)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.125">
-      <div class="step-ref skipped">125</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>click(&quot;//button[contains(., &#39;Share&#39;)]&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.126">
-      <div class="step-ref skipped">126</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>delay(1000)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.127">
-      <div class="step-ref skipped">127</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;User 2 commented on first post:&#39;, commentText)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Step 13: Logout User 2</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.130">
-      <div class="step-ref skipped">130</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;===== USER 2: LOGOUT =====&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.131">
-      <div class="step-ref skipped">131</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>waitFor(&quot;//button[contains(., &#39;Logout&#39;)] | //a[contains(., &#39;Logout&#39;)]&quot;).click()</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.132">
-      <div class="step-ref skipped">132</div>
-      
-      <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>delay(2000)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.133">
-      <div class="step-ref skipped">133</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>waitFor(&quot;input[name=&#39;email&#39;]&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.134">
-      <div class="step-ref skipped">134</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>karate.log(&#39;User 2 logged out successfully&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
+  <div class="preformatted" data-parent="0.95">20:05:58.323 User 1 logged out successfully 
+</div>   
 
   
 
