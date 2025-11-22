@@ -64,7 +64,7 @@ function CommentModal({ postId }) {
 
     return (
         <>
-            <Button flex='1' variant='ghost' onClick={onOpen}>Comment {comments.length}</Button>
+            <Button className='comment-btn' flex='1' variant='ghost' onClick={onOpen}>Comment {comments.length}</Button>
             <Modal
                 isCentered
                 onClose={onClose}
@@ -87,7 +87,7 @@ function CommentModal({ postId }) {
                                 placeholder={'Share a Comment'}
                             />
                             <InputRightElement width='4.5rem'>
-                                <Button type='submit' colorScheme={'pink'} h='1.75rem' size='sm' >
+                                <Button className='comment-share-btn' type='submit' colorScheme={'pink'} h='1.75rem' size='sm' >
                                     Share
                                 </Button>
                             </InputRightElement>
@@ -101,7 +101,7 @@ function CommentModal({ postId }) {
                                     <Card as={Link} to={`/profile/${comment.userId}`} key={comment.id} width={"100%"} size={'sm'}>
                                         <CardBody>
                                             <Heading size={'md'}>{comment.userName + " " + comment.userLastName}</Heading>
-                                            <Text>{comment.description}</Text>
+                                            <Text className='comment-text'>{comment.description}</Text>
                                         </CardBody>
                                     </Card>
                                 ))

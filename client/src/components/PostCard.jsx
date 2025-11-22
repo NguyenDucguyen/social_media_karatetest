@@ -97,16 +97,16 @@ function PostCard({ userName, userImage, description, postImage, postId, userId 
             >
                 {
                     isLiked ?
-                        <Button onClick={()=>handleUnlike()} flex='1' colorScheme={'pink'} leftIcon={<BiLike />}>
+                        <Button className='like-btn' onClick={()=>handleUnlike()} flex='1' colorScheme={'pink'} leftIcon={<BiLike />}>
                             Like {likes.length}
                         </Button>
-                        : <Button onClick={() => handleLike()} flex='1' variant='ghost' leftIcon={<BiLike />}>
+                        : <Button className='like-btn' onClick={() => handleLike()} flex='1' variant='ghost' leftIcon={<BiLike />}>
                             Like {likes.length}
                         </Button>
                 }
 
                 <CommentModal postId={postId} />
-                <Button flex='1' variant='ghost' leftIcon={<BiShare />}>
+                <Button className='share-btn' flex='1' variant='ghost' leftIcon={<BiShare />}>
                     Share
                 </Button>
             </CardFooter>
