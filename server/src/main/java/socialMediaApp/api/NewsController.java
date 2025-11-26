@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class NewsController {
 
     @Value("${news.api.base-url}")
-    private String apiBaseUrl; // http://localhost:8090
+    private String apiBaseUrl;
 
     @Value("${news.api.key}")
     private String apiKey;

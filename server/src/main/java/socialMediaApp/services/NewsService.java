@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class NewsService {
 
     @Value("${news.api.base-url}")
-    private String apiBaseUrl; // Giá trị sẽ là http://localhost:8090
+    private String apiBaseUrl;
 
     @Value("${news.api.key}")
     private String apiKey;
@@ -21,7 +21,7 @@ public class NewsService {
     }
 
     public String getTopHeadlines() {
-        // Spring Boot sẽ gọi: http://localhost:8090/v2/top-headlines...
+        // call http:8090/v2/top>>>>.....
         String url = apiBaseUrl + "/v2/top-headlines?country=us&apiKey=" + apiKey;
         return restTemplate.getForObject(url, String.class);
     }

@@ -2,12 +2,10 @@ Feature: Full Stack NewsAPI Mock
 
   Background:
     * configure cors = true
-    # Hàm helper để tạo ngày tháng ngẫu nhiên (nếu cần)
+
     * def now = function(){ return java.time.Instant.now().toString() }
 
-  # =================================================================
-  # API 1: LẤY DANH SÁCH NGUỒN BÁO (/v2/top-headlines/sources)
-  # =================================================================
+
   Scenario: pathMatches('/v2/top-headlines/sources')
     * def responseStatus = 200
     * def response =
@@ -22,10 +20,6 @@ Feature: Full Stack NewsAPI Mock
       ]
     }
     """
-
-  # =================================================================
-  # API 2: TÌM KIẾM TOÀN BỘ (/v2/everything)
-  # =================================================================
 
   # Case 2.1: Tìm tin về Bitcoin
   Scenario: pathMatches('/v2/everything') && paramValue('q') == 'bitcoin'
@@ -90,7 +84,7 @@ Feature: Full Stack NewsAPI Mock
     }
     """
 
-  # Case 3.2: Tin Công nghệ (category=technology)
+  # Case 3.2: category=technology)
   Scenario: pathMatches('/v2/top-headlines') && paramValue('category') == 'technology'
     * def responseStatus = 200
     * def response =
