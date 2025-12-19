@@ -55,16 +55,16 @@ Feature: Posts UI Tests
     Given driver 'http://localhost:3000'
     * def user = setupAuthUser()
     When driver 'http://localhost:3000/home'
-    Then waitFor("//button[contains(., 'Share Post')]")
-    When click("//button[contains(., 'Share Post')]")
+    * def imagePostText = 'Check out this beautiful automation test image! '
+    Then waitFor("{button}Share Post").click()
     Then waitFor("//textarea[@name='description']")
-    # Create post text
-    * def postDesc = 'UI Test Post with Image ' + java.util.UUID.randomUUID()
-    When input("//textarea[@name='description']", postDesc)
-    * def imgPath = karate.properties['user.dir'] + '/src/test/resources/test-image.png'
-    # Upload image
-    When input("input[type='file']", imgPath)
-    # Wait for image preview to load - check for any img element or allow time for processing
-    * retry(10, 1000).waitUntil("document.querySelector('img[src*=\"blob\"]') !== null || document.querySelector('img') !== null")
-    When click("//button[contains(., 'Share')]")
-    
+    When input("//textarea[@name='description']", imagePostText)
+    * def imgPath = './src/test/resources/test-image.jpg'
+    When driver.inputFile("input[type='file']", imgPath)
+    * delay(2000)
+    When waitFor(".post-share-btn").click()
+    # Verify image post is posted with text and image
+    * delay(2000)
+    * assert text("body").includes(imagePostText)
+    * assert locateAll("img").length > 0
+    * karate.log('Image post verified on feed with image')

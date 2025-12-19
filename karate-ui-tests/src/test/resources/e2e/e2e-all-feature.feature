@@ -49,6 +49,9 @@ Feature: Complete E2E Social Media Application Flow
     When waitFor("{button}Share").click()
     Then delay(2000)
     * karate.log('User 1 created text post:', postText)
+    # Verify text post is posted
+    * assert text("body").includes(postText)
+    * karate.log('Text post verified on feed')
     
     # Step 5: Create post with image
     * def imagePostText = 'Check out this beautiful automation test image! '
@@ -61,6 +64,10 @@ Feature: Complete E2E Social Media Application Flow
     When waitFor(".post-share-btn").click()
     Then delay(2000)
     * karate.log('User 1 created image post:', imagePostText)
+    # Verify image post is posted with text and image
+    * assert text("body").includes(imagePostText)
+    * assert locateAll("img").length > 0
+    * karate.log('Image post verified on feed with image')
     
     # Step 7: Like a post (first post on profile)
     * waitFor(".like-btn").click()
